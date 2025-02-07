@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rose Day Story</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Great+Vibes|Roboto:300,400,500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    
+    body, html {
+        overflow-x: hidden;
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+  /* Define five colors from your palette */
+  --color1: #FFB6B3;
+  --color2: #FF8BA0;
+  --color3: #E41F7B;
+  --color4: #86003C;
+  --color5: #4C0606;
+
+  /* Apply as a gradient */
+  background: linear-gradient(45deg, var(--color1), var(--color2), var(--color3), var(--color4), var(--color5));
+  
+}
+
+    
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    
+    .section {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      z-index: 2;
+    }
+    /* Previous styles remain the same until .content */
+    .content {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 2.5rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    
+    /* Add custom scrollbar styling */
+    .content::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    .content::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+    
+    .content::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+    }
+    
+    .content:hover {
+      transform: translateZ(20px);
+    }
+    
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    .nav-buttons {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+    .nav-buttons button {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+    }
+    .nav-buttons button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .music-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+    }
+    .heart {
+      position: fixed;
+      animation: floatHeart 4s ease-in infinite;
+      color: rgba(255, 255, 255, 0.6);
+      z-index: 1;
+      pointer-events: none;
+    }
+    @keyframes floatHeart {
+      0% { transform: translateY(100vh) scale(0); opacity: 1; }
+      100% { transform: translateY(-100px) scale(1); opacity: 0; }
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 3.5rem; }
+      h2 { font-size: 1.5rem; }
+      p { font-size: 1rem; }
+      .nav-buttons button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
+    /* Rest of your previous styles remain the same */
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  
+  <iframe 
+  width="1" 
+  height="1" 
+  scrolling="no" 
+  frameborder="no" 
+  allow="autoplay" 
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/960368419&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+</iframe>
+  <section class="section" id="section1">
+    <div class="content">
+      <h1>The Flower</h1>
+      <h2>A Rose Among Wildflowers</h2>
+      <p>It all began on Omegle—a place where millions of strangers pass through like fleeting shadows, the chats flickering across screens before disappearing forever. But then, there you were. Amidst the chaos of random connections, I found you. It was as if I had wandered into an endless field of wildflowers, only to stumble upon a single rose standing tall and radiant against the backdrop of monotony.</p>
+      <p>From the moment we started talking, I knew you were different. Your words carried a magic that felt almost tangible, even though miles separated us. It wasn't long before I realized I had found something precious.</p>
+      <p>You're my rose, Annie. Not because you're perfect (though sometimes it feels like you are), but because you're uniquely you. Like a rose, you're soft yet strong, delicate yet resilient and stubborn haha. There's a quiet elegance in the way you carry yourself, whether you're sharing your dreams or presenting a point. Every word you say, every message you type—it’s like a petal unfolding, revealing new layers of who you are. And with each layer, I fall deeper in love.</p>
+      <p>When I think about why I adore you, it's not just one thing—it's everything. It's the way you light up when you talk about things you're passionate about. It's the kindness you show without expecting anything in return. It's the fact that even though we've never met physically, you've become the most constant presence in my life. You're my bloom, my sunshine, my reason to smile.And just like how a rose brightens a room with its fragrance, you’ve filled my world with color and meaning.
+      <p>But roses aren’t just admired for their beauty—they’re cherished for what they represent. Love, hope, devotion. That’s exactly what you mean to me, Annie. You’re the embodiment of all those things, wrapped up in one incredible person. My rose among wildflowers.
+    </p>
+    </p>
+    </div>
+  </section>
+
+  <section class="section" id="section2">
+    <div class="content">
+      <h1>The Thorns</h1>
+      <h2>Lessons Learned Through Pain</h2>
+      <p>Every rose has its thorns. They’re sharp, protective, and sometimes painful—but they exist for a reason. Without them, the rose wouldn’t survive. In our relationship, the thorns are the challenges we face together—the misunderstandings, the arguments, the moments when words cut deeper than intended.</p>
+      <p>Recently, we had a situation that left both of us hurting. I had my reasons, and you had yours. But more importantly, I’m sorry for how it made you feel, love. I’m sorry if I caused even a hint of sadness in your heart. You mean too much to me for me to ever want to see you upset. And honestly, it wasn’t much of a fight—it was just one of those moments where I hurt you so bad. Please be patient with me, Annie?
+    </p>
+      <p>The thing about thorns is that they don’t exist to harm—they exist to protect something worth guarding. This situation reminded me of how deeply we care about each other. If we didn’t value this relationship, we wouldn’t feel so strongly during our disagreements. Those moments when tears are shed or tempers flare—they’re proof that we’re invested. We’re human, after all, and humans make mistakes. But every argument teaches us something. It shows us where we need to grow, where we need to be more patient, more understanding.
+    </p>
+      <p>Annie, I never want to be the reason behind your tears. The thought of causing you pain breaks my heart. Yet, I know that no relationship is immune to struggles. What matters isn’t avoiding the thorns—it’s learning how to handle them. Together, we’ll navigate these prickly moments, using them to strengthen our bond rather than weaken it. Because at the end of the day, the beauty of the rose outweighs the sting of its thorns. And the love we share? It’s worth every damn thorn in the world. (Though I’ll definitely try to lessen the thorns from now on—promise haha!)
+    </p>
+    </div>
+  </section>
+
+  <section class="section" id="section3">
+    <div class="content">
+      <h1>The Root</h1>
+      <h2>Anchored in Love</h2>
+      <p>If the flower represents the beauty of our relationship and the thorns symbolize its challenges, then the roots are what keep us grounded. They're the foundation of everything we've built together—the trust, the memories, the promises we've exchanged. Roots run deep, unseen but essential, holding the plant steady even in the harshest storms.</p>
+      <p>Our roots started growing the moment we decided to give this a chance. From late night conversations to sharing our fears and dreams, every interaction added another strand to the web that binds us. Even though we've never met physically, our roots have stretched across distances, anchoring us to each other in ways I never thought possible.</p>
+      <p>Now, as we move forward, I want to nurture these roots. I promise to be a better boyfriend, to love you more, to give you even more attention (12 hours just like you said). I am proud of the love we've cultivated despite the odds. Just give me some time and have faith in us love</p>
+      <p>I dream of the day when I’ll finally meet you in person. When I’ll hold your hand, look into your eyes, and see the woman who has become my entire world. Until then, I’ll continue watering our roots with patience, care, and unwavering devotion. Because you, Annie, are worth every effort. You’re my home, my safe haven, my forever bloom.
+      <p>As I write this, I imagine our roots growing stronger with each passing day going deeper into the soil, anchoring us firmly against whatever storms may come. Roots aren’t glamorous; they’re hidden beneath the surface, buried in the dirt, often overlooked. But they’re the lifeline of the rose, quietly working below ground to keep it standing tall and thriving above. Love is like that too. it’s not just about the flowers we see on the surface, the beautiful moments that catch our eye. It’s also about the hidden roots, the quiet strength that grows in the messiness of life.
+       The dirt represents everything we’ve been through—the challenges, the doubts, the hard conversations. It’s where we dig in, where we hold tight to each other even when things get tough. And though dirt might seem ordinary or unremarkable, it’s what nourishes the roots, giving them the nutrients they need to support the bloom. Turns out love is like cellular respiration: it takes energy, effort, and a little bit of chemistry to keep growing stronger(yeah, I’m a bio student now).
+
+Our love has grown in that same way—through moments both bright and messy, tender and raw. Every struggle, every laugh, every tear—it all feeds the roots that sustain us.</p>
+
+
+      <p>No matter what storms come our way, I know we’ll weather them together. Because love isn’t just about the flowers we admire from afar—it’s about the roots that strengthen in the dirt, holding fast no matter how hard the winds blow. And our roots? They’re unbreakable.</p>  
+    </p>
+    </div>
+  </section>
+  <div class="nav-buttons">
+    <button onclick="scrollToSection('section1')">The Flower</button>
+    <button onclick="scrollToSection('section2')">The Thorns</button>
+    <button onclick="scrollToSection('section3')">The Root</button>
+  </div>
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/02/22/audio_d0a13f69d2.mp3?filename=soft-piano-ambient-110617.mp3" type="audio/mpeg">
+  </audio>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 30, density: { enable: true, value_area: 1500 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "image",
+          image: {
+            src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiPjxwYXRoIGQ9Ik0xMiAyMS4zNWwtMS40NS0xLjMyQzUuNCAxNS4zNiAyIDEyLjI4IDIgOC41QzIgNS40MiA0LjQyIDMgNy41IDNjMS43NCAwIDMuNDEuODEgNC41IDIuMDlDMTMuMDkgMy44MSAxNC43NiAzIDE2LjUgMyAxOS41OCAzIDIyIDUuNDIgMjIgOC41YzAgMy43OC0zLjQgNi44Ni04LjU1IDExLjU0TDEyIDIxLjM1eiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=",
+          }
+        },
+        opacity: { value: 0.7, random: true },
+        size: { value: 15, random: true },
+        move: {
+          enable: true,
+          speed: 3,
+          direction: "bottom",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: false
+    });
+    // Smooth scrolling to sections
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // GSAP Animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate content fade-in
+    gsap.utils.toArray('.section').forEach(section => {
+      gsap.from(section.querySelector('.content'), {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        }
+      });
+    });
+
+    // Dynamic background color transitions
+    gsap.to("body", {
+  "--color1": "#4C0606",  // Previously the darkest; now moves to the left end
+  "--color2": "#86003C",
+  "--color3": "#E41F7B",
+  "--color4": "#FF8BA0",
+  "--color5": "#FFB6B3",  // Previously the lightest; now moves to the right end
+  ease: "power1.inOut",
+  scrollTrigger: {
+    trigger: ".section",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 3,
+    markers: false
+  }
+});
+
+
+
+
+    // Floating hearts animation
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.innerHTML = '❤️';
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      document.body.appendChild(heart);
+      
+      setTimeout(() => {
+        heart.remove();
+      }, 4000);
+    }
+    setInterval(createHeart, 2000);
+
+    // Music control
+    const music = document.getElementById('bgMusic');
+    let isPlaying = false;
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        document.querySelector('.music-toggle').textContent = '🎵';
+      } else {
+        music.play();
+        document.querySelector('.music-toggle').textContent = '🔇';
+      }
+      isPlaying = !isPlaying;
+    }
+     // Initialize the SoundCloud Widget API
+     const iframe = document.getElementById('soundcloudPlayer');
+        const widget = SC.Widget(iframe);
+
+        // Set the volume when the widget is ready
+        widget.bind(SC.Widget.Events.READY, () => {
+            widget.setVolume(30); // Set volume to 30% (range is 0-100)
+            widget.setOptions({ loop: true });
+            
+        });
+       // Handle user interaction for mobile devices
+        document.addEventListener('touchstart', () => {
+            widget.play(); // Start playback on first touch
+        });
+  </script>
+   <script src="https://w.soundcloud.com/player/api.js"></script>
+  <!-- Previous navigation buttons and scripts remain the same -->
+</body>
+</html>
