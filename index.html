@@ -175,7 +175,8 @@ h2 {
 <body>
   <div id="particles-js"></div>
   
-  <iframe 
+ <iframe 
+  id="soundcloudPlayer"
   width="1" 
   height="1" 
   scrolling="no" 
@@ -183,6 +184,7 @@ h2 {
   allow="autoplay" 
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/960368419&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
 </iframe>
+
   <section class="section" id="section1">
     <div class="content">
       <h1>The Flower</h1>
@@ -348,19 +350,21 @@ Our love has grown in that same way—through moments both bright and messy, ten
       isPlaying = !isPlaying;
     }
      // Initialize the SoundCloud Widget API
-     const iframe = document.getElementById('soundcloudPlayer');
-        const widget = SC.Widget(iframe);
+     // Initialize the SoundCloud Widget API using the iframe with id 'soundcloudPlayer'
+const iframe = document.getElementById('soundcloudPlayer');
+const widget = SC.Widget(iframe);
 
-        // Set the volume when the widget is ready
-        widget.bind(SC.Widget.Events.READY, () => {
-            widget.setVolume(30); // Set volume to 30% (range is 0-100)
-            widget.setOptions({ loop: true });
-            
-        });
-       // Handle user interaction for mobile devices
-        document.addEventListener('touchstart', () => {
-            widget.play(); // Start playback on first touch
-        });
+// When the widget is ready, you can set options (like volume and looping)
+widget.bind(SC.Widget.Events.READY, () => {
+    widget.setVolume(30); // Set volume to 30%
+    widget.setOptions({ loop: true });
+});
+
+// Listen for the first touch event to start playback
+document.addEventListener('touchstart', () => {
+    widget.play();
+}, { once: true }); // The { once: true } option ensures this only fires once
+
   </script>
    <script src="https://w.soundcloud.com/player/api.js"></script>
   <!-- Previous navigation buttons and scripts remain the same -->
